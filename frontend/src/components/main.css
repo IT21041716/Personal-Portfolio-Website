@@ -35,7 +35,16 @@
 
 .logo-img {
     height: 150px;
-    width: 150px
+    width: 150px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.nav {
+    display: flex;
+
 }
 
 .nav a {
@@ -53,7 +62,7 @@
 
 .home {
     height: 100vh;
-    background: linear-gradient(-90deg, #031540 65%, #fff 35%);
+    background: linear-gradient(-80deg, #031540 65%, #fff 35%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -291,17 +300,14 @@
 @keyframes animateLight {
     0% {
         color: #00abf0;
-        /* Starting color */
     }
 
     50% {
         color: #031540;
-        /* Middle color (white) */
     }
 
     100% {
         color: #00abf0;
-        /* Ending color (same as starting color) */
     }
 }
 
@@ -319,12 +325,297 @@
     margin-right: -5rem;
 
 }
-.cardImg{
+
+.cardImg {
     width: 100%;
     height: 250px;
     max-height: 250px;
 }
-.card-title{
+
+.card-title {
     color: #031540;
     font-weight: 600;
+}
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 10%;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .header.scrolled {
+        background-color: #031540ea;
+    }
+
+    .innerDiv {
+        margin-right: 1.5rem;
+    }
+
+    .innerDiv img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .nav,
+    .nav a {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        margin-right: 1.5rem;
+    }
+
+    .nav-show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 10%;
+        background-color: #031540;
+        width: 80%;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #00abf0;
+    }
+
+    .nav-show a {
+        margin: 10px 0;
+        color: #fff;
+        font-weight: 600;
+        font-size: 21px;
+        margin-left: 0.5rem;
+
+    }
+
+    .nav-show a:hover,
+    .nav-show a.active {
+        color: #00abf0;
+    }
+
+    .home {
+        height: 100%;
+        background: linear-gradient(-78deg, #031540 65%, #fff 35%);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10%;
+        padding-top: 7rem;
+    }
+
+    .home-img {
+        display: flex;
+        justify-content: flex-start;
+        align-items: left;
+        width: 200px;
+        height: 200px;
+        background-color: #031540;
+        border-radius: 50%;
+        border: 10px solid #fff;
+        outline: 10px solid #031540;
+    }
+
+    .home-img img {
+        position: relative;
+        transition: .5s;
+        width: 180px;
+        height: 180px;
+    }
+
+    .home-img img:hover {
+        transform: scale(1.1);
+    }
+
+    .home-content {
+        max-width: 580px;
+        color: white;
+        text-align: right;
+        margin-top: 3rem;
+
+    }
+
+    .home-content h1 {
+        font-size: 50px;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    .home-content h3 {
+        font-size: 38px;
+    }
+
+    .button {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 3rem;
+
+    }
+
+    /*about us page*/
+    .about-img {
+        display: flex;
+        justify-content: flex-start;
+        align-items: left;
+        width: 200px;
+        height: 200px;
+        background-color: #031540;
+        border-radius: 50%;
+        border: 10px solid #fff;
+        outline: 10px solid #031540;
+        margin-top: 1rem;
+    }
+
+    .about-img img {
+        position: relative;
+        transition: .5s;
+        width: 180px;
+        height: 180px;
+    }
+
+    .about-content {
+        margin-top: 10rem;
+        max-width: 570px;
+        color: white;
+        text-align: right;
+    }
+
+    .about-content h1 {
+        font-size: 50px;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    .about-content h3 {
+        font-size: 38px;
+    }
+
+    .contact-info {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .contact-info a {
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        font-size: 20px;
+        color: #00abf0;
+        text-decoration: none;
+        margin-left: 0;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .contact-info a:hover {
+        background: #00abf0;
+        color: #fff;
+        border-color: #00abf0;
+        box-shadow: 0 0 10px #00abf0;
+    }
+
+    .contact-info p {
+        display: none;
+    }
+
+    /*other*/
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        background-color: #031540;
+        border-radius: 50%;
+        border: 10px solid #00abf0;
+        margin-top: 1rem;
+        margin-right: 50%;
+        margin-left: 50%;
+        
+    }
+
+    .content h1 {
+        position: relative;
+        font-size: 35px;
+        line-height: 1.2;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .content h3 {
+        position: relative;
+        font-size: 30px;
+        font-weight: 600;
+        color: #00abf0;
+        -webkit-text-stroke: 0.5px #031540;
+        animation: animateLight 2s infinite;
+        text-shadow: 0 0 5px #00abf0;
+    }
+
+    @keyframes animateLight {
+        0% {
+            color: #00abf0;
+        }
+
+        50% {
+            color: #031540;
+        }
+
+        100% {
+            color: #00abf0;
+        }
+    }
+
+    .content p {
+        font-size: 12px;
+        margin-top: 20px;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .project-content {
+        margin-top: 2rem;
+        width: 90%;
+        max-width: 90%;
+        max-height: 600px;
+        overflow-y: scroll;
+        margin-right: 50%;
+        margin-left: 50%;
+    }
+
+    .cardImg {
+        width: 100%;
+        height: 200px;
+        max-height: 200px;
+    }
+
+    .card-title {
+        color: #031540;
+        font-weight: 600;
+    }
+    .button{
+        margin-bottom: 0.5rem;
+    }
+
 }

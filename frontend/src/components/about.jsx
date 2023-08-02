@@ -35,7 +35,7 @@ const about = () => {
           <h1>About Me</h1>
           <h3>Fullstack Developer</h3>
           <p>I am Sithanga Rashmika Sandaruwan, a 23-year-old undergraduate student pursuing BSc (Hons) in Information Technology specializing in Software Engineering at SLIIT. Passionate about technology, I have contributed to several innovative projects and aspire to become a skilled Software Engineer. Throughout my journey, I have honed my programming skills and gained practical experience in web development and mobile app development. I am a team player and enjoy collaborating with like-minded individuals to solve complex challenges. Beyond academics, I enjoy exploring new technologies and staying updated with the latest trends in the tech industry. My goal is to create impactful solutions that enhance people's lives through technology.</p>
-          
+
           Follow Me..
           <div className='home-icons'>
             <a href='https://www.linkedin.com/in/sithanga-rashmika-63565725a/'><LinkedInIcon /></a>
