@@ -6,7 +6,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import Header from './header';
-import cv from '../assets/Sandaruwan W.S.R.pdf'
+import cv from '../assets/Resume Sandaruwan W.S.R.pdf'
 
 
 const home = () => {

@@ -275,8 +275,6 @@
     height: 450px;
     text-align: center;
     margin-left: -7rem;
-    border: 25px solid #00abf0;
-    border-radius: 50%;
 }
 
 .content h1 {
@@ -289,8 +287,8 @@
 
 .content h3 {
     position: relative;
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 35px;
+    font-weight: 400;
     color: #00abf0;
     -webkit-text-stroke: 0.5px #031540;
     animation: animateLight 2s infinite;
@@ -315,7 +313,7 @@
     font-size: 16px;
     margin-top: 20px;
     color: #031540;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .project-content {
@@ -336,6 +334,43 @@
     color: #031540;
     font-weight: 600;
 }
+
+
+/* skill page css*/
+
+.skill {
+    width: 140px;
+    height: 140px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.skill:hover {
+    transform: scale(1.2);
+}
+
+
+.inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.5);
+
+}
+
+#number img{
+    width: 120px;
+    height: 120px;
+}
+.skill-container{
+    width: 55%;
+    margin-top: 1rem;
+}
+
 
 
 @media screen and (max-width: 768px) {
@@ -403,6 +438,7 @@
     .nav-show a:hover,
     .nav-show a.active {
         color: #00abf0;
+        text-decoration: underline;
     }
 
     .home {
@@ -548,7 +584,6 @@
         height: 300px;
         background-color: #031540;
         border-radius: 50%;
-        border: 10px solid #00abf0;
         margin-top: 1rem;
         margin-right: 50%;
         margin-left: 50%;
@@ -566,7 +601,7 @@
     .content h3 {
         position: relative;
         font-size: 30px;
-        font-weight: 600;
+        font-weight: 400;
         color: #00abf0;
         -webkit-text-stroke: 0.5px #031540;
         animation: animateLight 2s infinite;
@@ -591,7 +626,8 @@
         font-size: 12px;
         margin-top: 20px;
         color: #fff;
-        font-weight: 600;
+        font-weight: 300;
+        text-align: center;
     }
 
     .project-content {
@@ -616,6 +652,11 @@
     }
     .button{
         margin-bottom: 0.5rem;
+    }
+
+    .skill-container{
+        width: 90%;
+        margin-top: 1rem;
     }
 
 }

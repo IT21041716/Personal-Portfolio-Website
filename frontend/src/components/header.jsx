@@ -51,6 +51,7 @@ const Header = () => {
                         <Link to='/' className={activeLink === '' ? 'active' : ''} onClick={() => setActiveLink('')}>Home</Link>
                         <Link to='/projects' className={activeLink === 'projects' ? 'active' : ''} onClick={() => setActiveLink('projects')}>Projects</Link>
                         <Link to='/certificates' className={activeLink === 'certificates' ? 'active' : ''} onClick={() => setActiveLink('certificates')}>Certificates</Link>
+                        <Link to='/skills' className={activeLink === 'skills' ? 'active' : ''} onClick={() => setActiveLink('skills')}>Skills</Link>
                         <Link to='/about' className={activeLink === 'about' ? 'active' : ''} onClick={() => setActiveLink('about')}>About</Link>
                     </navbar>
                 </div>
