@@ -16,7 +16,9 @@
     align-items: center;
     z-index: 100;
 }
-
+.navbar-section{
+    margin-top: -4.5rem;
+}
 .innerDiv {
     display: flex;
     flex-direction: row;
@@ -48,16 +50,19 @@
 }
 
 .nav a {
-    font-size: 18px;
+    font-size: 22px;
     color: white;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
+   
+
 }
 
 .nav a:hover,
 .nav a.active {
     color: #00abf0;
+    border-bottom: 2px solid #00abf0;
 }
 
 .home {
@@ -387,6 +392,9 @@
         z-index: 100;
     }
 
+    .navbar-section{
+        margin-top: 0;
+    }
     .header.scrolled {
         background-color: #031540ea;
     }

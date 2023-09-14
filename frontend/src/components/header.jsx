@@ -43,7 +43,7 @@ const Header = () => {
                     </a>
                 </div>
 
-                <div>
+                <div className='navbar-section'>
                     <div className='menu-icon' onClick={toggleNav}>
                         <MenuIcon />
                     </div>

@@ -7,7 +7,7 @@ import CallIcon from '@mui/icons-material/Call';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookIcon from '@mui/icons-material/Facebook';
+
 
 const about = () => {
   return (
@@ -41,7 +41,6 @@ const about = () => {
             <a href='https://www.linkedin.com/in/sithanga-rashmika-63565725a/'><LinkedInIcon /></a>
             <a href='https://github.com/IT21041716'><GitHubIcon /></a>
             <a href='https://www.instagram.com/s_rashmika_00/'><InstagramIcon /></a>
-            <a href='https://web.facebook.com/sithangarashmika.sadaruwan/'><FacebookIcon /></a>
           </div>
         </div>
       </section>

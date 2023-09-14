@@ -4,7 +4,6 @@ import myPic from '../assets/sithanga.png'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookIcon from '@mui/icons-material/Facebook';
 import Header from './header';
 import cv from '../assets/Resume Sandaruwan W.S.R.pdf'
 
@@ -27,7 +26,6 @@ const home = () => {
             <a href='https://www.linkedin.com/in/sithanga-rashmika-63565725a/'><LinkedInIcon /></a>
             <a href='https://github.com/IT21041716'><GitHubIcon /></a>
             <a href='https://www.instagram.com/s_rashmika_00/'><InstagramIcon /></a>
-            <a href='https://web.facebook.com/sithangarashmika.sadaruwan/'><FacebookIcon /></a>
           </div>
 
           <a href={cv} target='blank' className='button'>Download CV</a>

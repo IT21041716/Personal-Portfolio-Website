@@ -16,6 +16,9 @@ import php from '../assets/php.png'
 import python from '../assets/python.png'
 import react from '../assets/react.png'
 import spring from '../assets/springboot.png'
+import sql from '../assets/sql.png'
+import postman from '../assets/postman.png'
+import boostrap from '../assets/boostrap.png'
 
 const skills = () => {
     return (
@@ -179,6 +182,39 @@ const skills = () => {
                                 <div className="inner">
                                     <div id="number">
                                         <img src={spring} />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div className='col-lg-3 col-md-6 col-6' id= 'skill-logo'>
+                            <div className="skill">
+
+                                <div className="inner">
+                                    <div id="number">
+                                        <img src={sql} />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div className='col-lg-3 col-md-6 col-6' id= 'skill-logo'>
+                            <div className="skill">
+
+                                <div className="inner">
+                                    <div id="number">
+                                        <img src={postman} />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div className='col-lg-3 col-md-6 col-6' id= 'skill-logo'>
+                            <div className="skill">
+
+                                <div className="inner">
+                                    <div id="number">
+                                        <img src={boostrap} />
                                     </div>
                                 </div>
                             </div>
